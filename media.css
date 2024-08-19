@@ -1,0 +1,160 @@
+body {
+    background-image: linear-gradient(to right, #e8d9b2, #f3e6c8, #b4c0c5);
+    padding: 0px;
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+/*Home Heading: Note and Go*/
+.main-heading {
+    display: flex;
+    justify-content: center; /*Center hor*/
+    align-items: center; /*Center vert*/
+    height: 95vh;
+}
+
+h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #000000;
+}
+
+/*Navbar*/
+.navbar {
+    background-image: linear-gradient(to right, #e8d9b2, #f3e6c8, #b4c0c5);
+    font-size: 30px;
+    color: #b4c0c5;
+}
+
+.navbar-brand {
+    font-family: "Freeman", sans-serif;
+}
+
+a {
+    color: grey;
+  }
+
+/*About Dropdown*/
+    .dropdown-menu {
+        padding: 0px;
+    }
+
+    .dropdown-item{
+        background-image: linear-gradient(to right, #e8d9b2, #f3e6c8, #b4c0c5);
+        margin: 0px;
+    }
+
+/*h2*/
+h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #000000;
+    display: flex;
+    justify-content: center; /*Center hor*/
+    align-items: center; /*Center vert*/
+    height: 30vh;
+    margin: 1em auto;
+    text-align: center;
+}
+
+/*Carousel*/
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /*centerts the carousel*/
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Carousel Inner Items*/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+/*Carousel Images*/
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Carousel Buttons*/
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(243, 241, 241, 0); /*I make it transparent*/
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100%, 100%;
+}
+
+/*To hide control*/
+.carousel-control-prev-icon {
+    background-image: url('path/to/prev-icon.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('path/to/next-icon.png');
+}
+
+/* Visually hidden text for accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*Footer*/
+.footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer p{
+    font-family: "Urbanist", sans-serif;
+}

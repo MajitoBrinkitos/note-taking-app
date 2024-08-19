@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Note and Go</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="./download.css">
+
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/e2d250d66b.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+         <!--Navbar-->
+         <nav class="navbar fixed-top navbar-expand-lg bg-body tertiary">
+            <div class="container-fluid">
+                <!--Home: Note and Go-->
+                <a class="navbar-brand" href="/home"> Note and Go <i class="fa-brands fa-stack-overflow";></i> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--Toggle Icon-->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About</a>
+                            <!--dropdown submenu-->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/about">The App</a></li>
+                                <li><a class="dropdown-item" href="/download" target="_blank">Downloads</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/media">Media</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">New Version Winter 2024</a>
+                        </li>
+                    </ul>
+
+                    <!--Second Navbar-->
+                    <ul class="navbar-nav ms-auto"> <!--ms-auto: ALigns elements to the right within a flex container-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">My Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Heading-->
+        <div class="container-fluid">
+            <h1> <i style="font-size: 28px;">Whatever it's on your mind, just </i> <strong style="font-family: Freeman, sans-serif;"> Note and Go <i class="bi bi-stack-overflow"></i> </strong> </h1>
+        </div>
+
+        <div class="container-fluid text-center">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+
+                </div>
+                <div class="col">
+                    <h2>Choose your favorite OS and experience the minimalist way of keeping all your thoughts together</h2>
+                    <br/>
+                    <p style="font-size: 22px;">Download the app for free and start using it today</p>
+                </div>
+                <div class="col col-lg-2">
+
+                </div>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <!--App Store-->
+                    <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-apple"></i> App Store</button>
+                    <!--Note: When Click, an alert -->
+                </div>
+                <div class="col">
+                    <!-- Google play -->
+                    <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-google-play"></i> Google Play</button>
+                </div>
+                <div class="col">
+                    <!-- Microsoft -->
+                    <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-windows"></i> Microsoft</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <p>
+                123 Free Code Camp Drive, Burnaby, BC, Canada | All rights reserved | <i class="fa-solid fa-copyright"></i> <i class="fa-solid fa-r"></i>
+            </p>
+        </footer>
+
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        document.querySelectorAll('.btn').forEach(function(button){
+            button.addEventListener('click', function () {
+        alert('Simulates the .exe file download'); //Simulates the download of the .exe file for each OS
+            });
+        });
+    </script>
+
+
+      
+</body>
+</html>
