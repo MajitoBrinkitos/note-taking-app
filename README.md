@@ -60,6 +60,7 @@ cd note-taking-app
 # Install dependencies (if any)
 npm install
 
+![image](https://github.com/user-attachments/assets/633a7cda-64ba-4d36-8ba0-e137a6cc4e58)
 
 
 
