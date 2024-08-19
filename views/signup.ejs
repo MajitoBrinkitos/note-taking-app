@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Note and Go</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="/style.css"> <!--style.css file in Public Folder-->
+
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/e2d250d66b.js" crossorigin="anonymous"></script>
+
+    </head>
+
+
+    <body>
+        <!--Navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body tertiary">
+            <div class="container-fluid">
+                <!--Home: Note and Go-->
+                <a class="navbar-brand" href="/home"> Note and Go <i class="fa-brands fa-stack-overflow";></i> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--Toggle Icon-->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About</a>
+                            <!--dropdown submenu-->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/about">The App</a></li>
+                                <li><a class="dropdown-item" href="/download" target="_blank">Downloads</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/media">Media</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">New Version Winter 2024</a>
+                        </li>
+                    </ul>
+
+                    <!--Second Navbar-->
+                    <ul class="navbar-nav ms-auto"> <!--ms-auto: ALigns elements to the right within a flex container-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">My Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Form-->
+        <div class="main-heading">
+            <h1> <strong style="font-family: Freeman, sans-serif;">Note and Go <i class="bi bi-stack-overflow"></i> </strong> <i style="font-size: 28px;">Registration Form</i></h1>
+        </div>
+        <h3>Please fill out this form with the required information</h3>
+
+        <form action="/signup" method="POST">
+
+            <!--Fieldset Section: Name, Email, Password-->
+            <fieldset>
+                <!--First Name-->
+                <label for="name">Enter Your Full Name:
+                    <input id="name" type="text" name="name" required>
+                </label>
+                <!--Last Email-->
+                <label for="email">Enter Your Email:
+                    <input id="email" type="email" name="email" required>
+                </label>
+                <!--Last User-->
+                <label for="user">Create a User:
+                    <input id="user" type="text" name="user" required>
+                </label>
+                <!--Last Password-->
+                <label for="new-password">Create a New Password: (lowercase, numbers ONLY, 8 characters):
+                    <input id="new-password" type="password" name="password" pattern="[a-z0-5]{5,}" required> <!--lowcase letters, digits 0 to 5, at least 5 char-->
+                </label>
+            </fieldset>
+            
+            <br/>
+
+            <!--Submit-->
+            <input type="submit" value="Submit" /> <!--Submits its nearest parent form-->
+        </form>
+
+        <!--Already have an account-->
+        <p>Already have an account? <a href="/login">Acess My account</a>
+
+        <!--Footer-->
+        <footer class="footer">
+            <p>
+                123 Free Code Camp Drive, Burnaby, BC, Canada | All rights reserved | <i class="fa-solid fa-copyright"></i> <i class="fa-solid fa-r"></i>
+            </p>
+        </footer>
+
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <!--Script for Navbar-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Optional: Add event listeners for custom behavior
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navbarCollapse = document.querySelector('#navbarNav');
+    
+            navbarToggler.addEventListener('click', function() {
+                navbarCollapse.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
+</html>
