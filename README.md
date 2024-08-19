@@ -34,8 +34,12 @@ project-root/
 Instructions on how to install and set up the project
 
 ```bash
+
 #clone the repository
+
 git clone https://github.com/MajitoBrinkitos/note-taking-app
+
+gh repo clone MajitoBrinkitos/note-taking-app
 
 #navigate to the project directory
 cd note-taking-app
