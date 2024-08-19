@@ -4,6 +4,7 @@
 A minimalist note-taking app specially designed for those looking for a straigh-forward note space.
 
 ##Project Directory
+
 project-root/
 │
 ├── public/             # Static files (CSS, JS, images)
