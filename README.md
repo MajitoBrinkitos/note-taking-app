@@ -1,3 +1,6 @@
+![Screenshot 2024-08-18 235226](https://github.com/user-attachments/assets/96e2d77b-548c-48f4-979d-f958a11f2a10)
+
+
 #Note and Go
 
 A minimalist note-taking app
@@ -60,7 +63,7 @@ cd note-taking-app
 # Install dependencies (if any)
 npm install
 
-![image](https://github.com/user-attachments/assets/633a7cda-64ba-4d36-8ba0-e137a6cc4e58)
+
 
 
 
